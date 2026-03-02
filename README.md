@@ -1,19 +1,25 @@
-<h1 align=center>Neow</h1>
+<h1 align=center>sVIe</h1>
+
+<p align="center"> <i>Sacrilege</i> * <i>Vi</i> * <i>Emacs</i></p>
+
+###
 
 <div align=center>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/szorfein/neow?style=for-the-badge&labelColor=101418&color=9ccbfb)
-![GitHub Repo stars](https://img.shields.io/github/stars/szorfein/neow?style=for-the-badge&labelColor=101418&color=b9c8da)
-![GitHub repo size](https://img.shields.io/github/repo-size/szorfein/neow?style=for-the-badge&labelColor=101418&color=d3bfe6)
-
-<p style="padding: 8px 0 16px 0;">
-Aesthetic, Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b> and <b>fast</b>.
-</p>
+![GitHub last commit](https://img.shields.io/github/last-commit/szorfein/svie?style=for-the-badge&labelColor=101418&color=9ccbfb)
+![GitHub Repo stars](https://img.shields.io/github/stars/szorfein/svie?style=for-the-badge&labelColor=101418&color=b9c8da)
+![GitHub repo size](https://img.shields.io/github/repo-size/szorfein/svie?style=for-the-badge&labelColor=101418&color=d3bfe6)
 
 </div>
 
-![Vibe with Neow Dasboard](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/Neow.jpg)
-![Vibe with Neow](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/full.jpg)
+###
+
+<p align="center" style="padding: 8px 0 16px 0;">
+Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b> and <b>fast</b>.
+</p>
+
+![Vibe with sVIe Dasboard](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/Neow.jpg)
+![Vibe with sVIe](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/full.jpg)
 
 ## ✨ Features
 
@@ -33,7 +39,7 @@ Aesthetic, Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</
 
 ## 🧰 Installation
 
-    git clone https://github.com/szorfein/neow ~/.config/nvim
+    git clone https://github.com/szorfein/svie ~/.config/nvim
 
 ## 🔧 Configuration
 
@@ -51,7 +57,12 @@ You can customize any of theses files to matches with your need.
 
     nvim
 
-lazy.nvim will install all the stuff for Neow, just wait a few seconds.
+lazy.nvim will install all the stuff for sVIe, just wait a few seconds.
+
+## 🙌 Contributing
+
+- Report issues on any bugs, suggestions, questions.
+- Pull Request are welcome, enhancing boot time, refactoring, documentations... If not sure about, post an issue first.
 
 ## ⭐ Inspiration
 
