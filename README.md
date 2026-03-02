@@ -1,4 +1,8 @@
-<h1 align=center>Neow</h1>
+<h1 align=center>nVIe</h1>
+
+<p align="center"> <i>Neo</i> * <i>Vi</i> * <i>Emacs</i></p>
+
+###
 
 <div align=center>
 
@@ -7,7 +11,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/szorfein/neow?style=for-the-badge&labelColor=101418&color=d3bfe6)
 
 <p style="padding: 8px 0 16px 0;">
-Aesthetic, Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b> and <b>fast</b>.
+Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b> and <b>fast</b>.
 </p>
 
 </div>
