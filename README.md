@@ -1,14 +1,14 @@
-<h1 align=center>sVIe</h1>
+<h1 align=center>VIe</h1>
 
-<p align="center"> <i>Sacrilege</i> * <i>Vi</i> * <i>Emacs</i></p>
+<p align="center"> <i>Vi</i> * <i>Emacs</i> <i>(Vie is "life" en french)</i></p>
 
 ###
 
 <div align=center>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/szorfein/svie?style=for-the-badge&labelColor=101418&color=9ccbfb)
-![GitHub Repo stars](https://img.shields.io/github/stars/szorfein/svie?style=for-the-badge&labelColor=101418&color=b9c8da)
-![GitHub repo size](https://img.shields.io/github/repo-size/szorfein/svie?style=for-the-badge&labelColor=101418&color=d3bfe6)
+![GitHub last commit](https://img.shields.io/github/last-commit/szorfein/vie?style=for-the-badge&labelColor=101418&color=9ccbfb)
+![GitHub Repo stars](https://img.shields.io/github/stars/szorfein/vie?style=for-the-badge&labelColor=101418&color=b9c8da)
+![GitHub repo size](https://img.shields.io/github/repo-size/szorfein/vie?style=for-the-badge&labelColor=101418&color=d3bfe6)
 
 </div>
 
@@ -18,8 +18,8 @@
 Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b> and <b>fast</b>.
 </p>
 
-![Vibe with sVIe Dasboard](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/Neow.jpg)
-![Vibe with sVIe](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/full.jpg)
+![Vibe theme with Vie Dasboard](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/Neow.jpg)
+![Vibe theme with Vie](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/full.jpg)
 
 ## ✨ Features
 
@@ -39,7 +39,7 @@ Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b
 
 ## 🧰 Installation
 
-    git clone https://github.com/szorfein/svie ~/.config/nvim
+    git clone https://github.com/szorfein/vie ~/.config/nvim
 
 ## 🔧 Configuration
 
@@ -57,7 +57,7 @@ You can customize any of theses files to matches with your need.
 
     nvim
 
-lazy.nvim will install all the stuff for sVIe, just wait a few seconds.
+lazy.nvim will install all the stuff for Vie, just wait a few seconds.
 
 ## 🙌 Contributing
 

@@ -4,7 +4,9 @@ return {
         'saghen/blink.cmp',
         version = '1.*',
         event = { 'InsertEnter', 'CmdlineEnter' },
-        dependencies = { 'L3MON4D3/LuaSnip' },
+        dependencies = {
+            'L3MON4D3/LuaSnip',
+        },
         opts = {
             snippets = { preset = 'luasnip' },
             keymap = {
@@ -46,6 +48,7 @@ return {
                 },
                 documentation = {
                     auto_show = true,
+                    auto_show_delay_ms = 200,
                     window = { border = 'single' },
                 },
                 menu = {

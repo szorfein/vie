@@ -1,6 +1,6 @@
-# sVIe cheat sheet
+# VIe cheat sheet
 
-sVIe implements some Emacs keyboard shortcut, (not all).
+VIe implements some Emacs keyboard shortcut, (not all).
 
 I keep the Vi logic like the navigation with h,j,l,m so for example this change all Emacs shortcuts using the arrow keys with the key for Vi, same with '$' character for 'end line' instead of 'e'.
 
@@ -8,9 +8,9 @@ Also running 'M-x' to run command has no interest here, Vi use ':' instead.
 
 ## Indexes
 
-- [Basic Movements](https://github.com/szorfein/nvie/blob/main/KEYBINDS.md#basics-movements)
-- [Windows Management](https://github.com/szorfein/nvie/blob/main/KEYBINDS.md#windows-management)
-- [Taking Notes](https://github.com/szorfein/svie/blob/main/KEYBINDS.md#notes-on-c-c)
+- [Basic Movements](#basics-movements)
+- [Windows Management](#windows-management)
+- [Taking Notes](#notes-on-c-c)
 
 ## Basic movements
 
