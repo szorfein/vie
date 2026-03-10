@@ -18,6 +18,12 @@ map('n', '<S-j>', '<C-w>j')
 map('n', '<S-k>', '<C-w>k')
 map('n', '<S-l>', '<C-w>l')
 
+-- Resize
+map('n', '<S-Up>', '<Cmd>resize -2<CR>', { desc = 'Resize split up' })
+map('n', '<S-Down>', '<Cmd>resize +2<CR>', { desc = 'Resize split down' })
+map('n', '<S-Left>', '<Cmd>vertical resize -2<CR>', { desc = 'Resize split left' })
+map('n', '<S-Right>', '<Cmd>vertical resize +2<CR>', { desc = 'Resize split right' })
+
 -- move start, end line
 map({ 'i', 'n' }, '<C-a>', '<Home>', { silent = true, desc = 'move begin line' })
 map({ 'i', 'n' }, '<C-e>', '<End>', { silent = true, desc = 'move end line' })
