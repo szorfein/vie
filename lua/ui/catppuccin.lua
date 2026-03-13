@@ -32,28 +32,28 @@ return {
                 --crust = mycolors.crust,
             },
         },
+        highlight_overrides = {
+            all = function(colors)
+                return {
+                    CursorLine = { bg = colors.surface0 }, -- don't work...
+                }
+            end,
+        },
+        default_integrations = false,
+        --auto_integrations = true,
         integrations = {
             gitsigns = true,
             treesitter = true,
             snacks = {
                 enabled = true,
+                indent_scope_color = 'lavender', -- catppuccin color (eg. `lavender`) Default: overlay2
             },
             lsp_trouble = true,
+            vimwiki = true,
             which_key = true,
             indent_blankline = {
                 enabled = false,
             },
-            illuminate = {
-                enabled = false,
-            },
-            telescope = {
-                enabled = false,
-            },
-            ufo = false,
-            nvimtree = false,
-            cmp = false,
-            dap = false,
-            dap_ui = false,
         },
     },
 }

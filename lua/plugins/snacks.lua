@@ -88,10 +88,12 @@ return {
         indent = {
             enabled = true,
             char = '▏',
+            --char = '╎',
             animate = { enabled = false },
             scope = {
                 enabled = true,
-                char = '▏',
+                --char = '▏',
+                char = '╎',
             },
             -- filter for buffers to enable indent guides
             filter = function(buf)
