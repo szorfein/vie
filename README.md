@@ -1,6 +1,6 @@
 <h1 align=center>VIe</h1>
 
-<p align="center"> <i>Vi</i> * <i>Emacs</i> <i>(Vie is "life" en french)</i></p>
+<p align="center"> <i><b>Vi</b></i> * <i><b>E</b>macs</i> <i>("Vie" mean "Life")</i></p>
 
 ###
 
