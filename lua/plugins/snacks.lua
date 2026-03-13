@@ -88,10 +88,12 @@ return {
         indent = {
             enabled = true,
             char = '▏',
+            --char = '╎',
             animate = { enabled = false },
             scope = {
                 enabled = true,
-                char = '▏',
+                --char = '▏',
+                char = '╎',
             },
             -- filter for buffers to enable indent guides
             filter = function(buf)
@@ -125,15 +127,6 @@ return {
         },
     },
     keys = {
-        {
-            '<c-f><c-f>',
-            function()
-                require('snacks').picker.files({
-                    hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat('.git') or {}, 'type') == 'directory',
-                })
-            end,
-            desc = 'Find Files',
-        },
         {
             '<leader>lD',
             function()
