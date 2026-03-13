@@ -1,8 +1,12 @@
 # Changelog
 
-## 0.21.0 - Mar. 2026
+## 0.25.0 - Mar. 2026
 
-- Rename project sVIe.
+- New keybinds for split, move and resize windows.
+- Catppuccin.nvim: disable all integrations by default.
+- Add syntax highlight on Yuck.
+- Snack.indent: new color and character.
+- Rename project VIe, pronounce 'Vee', mean Life.
 - Rename KEYBINDS.md CHEAT-SHEET.md, add a paragraph about basic movements.
 
 ## 0.20.0 - Feb. 2026
