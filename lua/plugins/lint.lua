@@ -4,6 +4,10 @@ return {
         'BufReadPre',
         'BufNewFile',
     },
+    dependencies = {
+        -- ansible files are not properly detected without this
+        { 'mfussenegger/nvim-ansible' },
+    },
     config = function()
         local lint = require('lint')
 
@@ -16,7 +20,7 @@ return {
             typescriptreact = { 'eslint_d' },
             svelte = { 'eslint_d' },
             astro = { 'eslint_d' },
-            ansible = { 'ansible_lint' },
+            ['yaml.ansible'] = { 'ansible_lint' },
         }
 
         local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })
