@@ -40,6 +40,10 @@ require('lazy').setup({
     -- automatically check for plugin updates, no thanks
     checker = { enabled = false },
 
+    rocks = {
+        enabled = false,
+    },
+
     -- https://github.com/NvChad/starter/blob/main/lua/configs/lazy.lua
     performance = {
         reset_packpath = true,

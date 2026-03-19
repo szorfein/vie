@@ -1,9 +1,6 @@
 local prettier = { 'prettier', stop_after_first = true }
-local ansible_lint = { 'ansible-lint' }
 
 return {
-    -- ansible files are not properly detected without this
-    { 'mfussenegger/nvim-ansible' },
     {
         'stevearc/conform.nvim',
         --event = { 'BufReadPre', 'BufNewFile' },
@@ -28,7 +25,6 @@ return {
                 typescript = prettier,
                 vue = { 'prettier' },
                 yaml = prettier,
-                ['yaml.ansible'] = ansible_lint,
             },
             formatters = {
                 prettier = {

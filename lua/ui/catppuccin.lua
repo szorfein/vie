@@ -36,6 +36,8 @@ return {
             all = function(colors)
                 return {
                     CursorLine = { bg = colors.surface0 }, -- don't work...
+                    StatusLine = { bg = colors.base },
+                    StatusLineNC = { bg = colors.base },
                 }
             end,
         },
