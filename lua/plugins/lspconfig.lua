@@ -56,8 +56,8 @@ return {
         })
 
         local border = { border = 'shadow' }
-        vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.buf(vim.lsp.handlers.hover, border)
-        vim.lsp.handlers['textDocument/hover'] = vim.lsp.buf(vim.lsp.handlers.hover, border)
+        vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.buf.hover(border)
+        vim.lsp.handlers['textDocument/hover'] = vim.lsp.buf.hover(border)
 
         -- lsp config
         local capabilities = vim.lsp.protocol.make_client_capabilities()
