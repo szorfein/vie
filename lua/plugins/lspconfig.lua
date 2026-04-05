@@ -10,7 +10,7 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
         -- 'trace', 'debug', 'info', 'warn', 'error'
-        vim.lsp.set_log_level('error')
+        vim.lsp.log.set_level('error')
 
         -- keybind shortcuts
         local function on_attach(client, bufnr)
@@ -56,8 +56,8 @@ return {
         })
 
         local border = { border = 'shadow' }
-        vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.hover, border)
-        vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, border)
+        vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.buf(vim.lsp.handlers.hover, border)
+        vim.lsp.handlers['textDocument/hover'] = vim.lsp.buf(vim.lsp.handlers.hover, border)
 
         -- lsp config
         local capabilities = vim.lsp.protocol.make_client_capabilities()
