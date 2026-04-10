@@ -90,6 +90,8 @@ return {
             char = '▏',
             --char = '╎',
             animate = { enabled = false },
+            only_scope = false,
+            only_current = true,
             scope = {
                 enabled = true,
                 --char = '▏',
