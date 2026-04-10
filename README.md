@@ -70,3 +70,4 @@ lazy.nvim will install all the stuff for Vie, just wait a few seconds.
 - https://github.com/NvChad/NvChad
 - https://github.com/brainfucksec/neovim-lua
 - https://github.com/xero/dotfiles/tree/main/neovim
+- https://github.com/wochap/nvim

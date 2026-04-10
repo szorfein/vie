@@ -61,6 +61,9 @@ set shiftwidth=4
 set smartindent
 set cindent
 
+" https://geanmar.com/posts/make-nvim-blazingly-fast/#setting-synmaxcol
+let g:synmaxcol = 500
+
 " Shell
 set shell=/bin/zsh
 
@@ -85,6 +88,4 @@ lua require('configs.commands')
 
 " Colours
 syntax enable
-" lightline before
-"let g:lightline = {'colorscheme': 'catppuccin'}
 colorscheme catppuccin
