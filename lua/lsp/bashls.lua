@@ -18,7 +18,6 @@ return function(on_attach)
         },
         filetypes = { 'bash', 'sh', 'zsh' },
         root_dir = util.find_git_ancestor,
-        root_markers = { '.git' },
         single_file_support = true,
     }
 end
