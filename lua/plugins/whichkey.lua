@@ -1,12 +1,16 @@
 return {
     'folke/which-key.nvim',
     event = 'VeryLazy',
+    init = function()
+        vim.opt.timeout = true
+    end,
     opts = {
-        delay = 400,
-        triggers = {
-            { '<auto>', mode = 'nixsotc' },
-            { 'a', mode = { 'n', 'v' } },
-        },
+        preset = 'modern',
+        notify = true,
+        -- https://github.com/folke/which-key.nvim/issues/824
+        -- triggers = {
+        --   { "<auto>", mode = "nsot" },
+        -- },
     },
     keys = {
         {

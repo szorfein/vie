@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.29.0, Apr. 2026
+
+- Don't format Ansible code, just enable lsp
+- Whichkey with `preset=modern`
+- Autocmd for resize windows
+- Enable LSP for yaml
+
 ## 0.25.0 - Mar. 2026
 
 - New keybinds for split, move and resize windows.
