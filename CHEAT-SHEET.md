@@ -27,7 +27,7 @@ Emacs use:
 | C-x  | C-c     | exits Emacs              |
 | C-\  |         | undo                     |
 
-sVIe use:
+VIe use:
 
 | key | binding | purpose                  |
 | --- | ------- | ------------------------ |
@@ -35,7 +35,7 @@ sVIe use:
 | C-x | C-s     | save the buffer          |
 | C-x | b       | display all open buffers |
 | C-x | k       | kill (close) a buffer    |
-| C-x | C-c     | exits sVIe               |
+| C-x | C-c     | exits VIe                |
 | u   |         | undo                     |
 
 ## Windows Management
@@ -52,13 +52,14 @@ Emacs use:
 
 VIe use:
 
-| key | binding | purpose                   |
-| --- | ------- | ------------------------- |
-| C-x | 0       | deletes the active window |
-| C-x | 1       | deletes other windows     |
-| C-x | 2       | split window bellow       |
-| C-x | 3       | split window right        |
-| S   | h,j,k,l | go in cardinal            |
+| key | binding    | purpose                   |
+| --- | ---------- | ------------------------- |
+| C-x | 0          | deletes the active window |
+| C-x | 1          | deletes other windows     |
+| C-x | 2          | split window bellow       |
+| C-x | 3          | split window right        |
+| S   | h,j,k,l    | go in cardinal            |
+| S   | arrow_keys | resize window             |
 
 ## Navigation keys
 
@@ -95,12 +96,12 @@ Vie use mainly the Vi style:
 
 ## Notes on [C-c]
 
-sVIe use [vim zettel](https://github.com/michal-h21/vim-zettel)
+VIe use [vim zettel](https://github.com/michal-h21/vim-zettel)
 
 | key | binding | purpose    |
 | --- | ------- | ---------- |
-| C-c | nn      | New note   |
-| C-c | nf      | Find notes |
+| C-c | n       | New note   |
+| C-c | f       | Find notes |
 
 ## Links
 
