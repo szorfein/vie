@@ -4,27 +4,28 @@ return {
     {
         'stevearc/conform.nvim',
         --event = { 'BufReadPre', 'BufNewFile' },
-        event = 'BufWritePre',
+        --event = 'BufWrite',
+        event = 'VeryLazy',
         cmd = { 'ConformInfo' },
         opts = {
             formatters_by_ft = {
                 --astro = { 'biome' },
-                astro = prettier,
-                css = prettier,
-                scss = { 'prettier' },
-                graphql = { 'prettier' },
-                html = prettier,
+                ['astro'] = { 'prettierd' },
+                ['css'] = { 'prettierd' },
+                ['scss'] = { 'prettierd' },
+                ['graphql'] = { 'prettierd' },
+                ['html'] = { 'prettierd' },
                 --javascript = { 'standardjs' },
-                javascript = prettier,
-                json = prettier,
+                ['javascript'] = { 'prettierd' },
+                ['json'] = { 'prettierd' },
                 lua = { 'stylua' },
-                markdown = { 'prettier' },
+                ['markdown'] = { 'prettierd' },
                 --ruby = { 'rubocop' },
                 ruby = { 'rufo' },
                 sh = { 'shfmt' },
-                typescript = prettier,
-                vue = { 'prettier' },
-                yaml = prettier,
+                ['typescript'] = { 'prettierd' },
+                ['vue'] = { 'prettierd' },
+                ['yaml'] = { 'prettierd' },
             },
             formatters = {
                 prettier = {
@@ -47,6 +48,8 @@ return {
             },
             -- Set default options
             default_format_opts = {
+                --async = true,
+                --quiet = false,
                 lsp_format = 'fallback',
             },
             -- Set up format-on-save

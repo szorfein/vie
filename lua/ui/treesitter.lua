@@ -1,31 +1,68 @@
+local vim = vim
+
 return {
     'nvim-treesitter/nvim-treesitter',
-    branch = 'main',
-    version = false, -- last release is way too old and doesn't work on Windows
-    build = ':TSUpdate',
+    --build = ':TSUpdate',
     lazy = vim.fn.argc(-1) == 0, -- load treesitter early when opening a file from the cmdline
-    event = 'VeryLazy',
-    cmd = { 'TSUpdate', 'TSInstall', 'TSBufEnable', 'TSBufDisable', 'TSLog', 'TSUninstall' },
+    --lazy = false,
+    --event = 'VeryLazy',
+    event = { 'BufReadPost', 'BufNewFile' },
+    --build = function()
+    --    local treesitter = require('nvim-treesitter')
+    ---    treesitter.update(nil, { summary = true })
+    --end,
+    cmd = { 'TSUpdate', 'TSInstall', 'TSInstallFromGrammar', 'TSLog', 'TSUninstall' },
+    build = ':TSUpdate',
+    --cmd = { 'TSUpdate', 'TSInstall', 'TSBufEnable', 'TSBufDisable', 'TSLog', 'TSUninstall' },
     opts_extend = { 'ensure_installed' },
     opts = {
-        indent = { enable = true },
-        highlight = { enable = true, use_languagetree = true },
-        folds = { enable = true },
-        ensure_installed = { 'lua', 'luadoc', 'printf', 'vim', 'vimdoc' },
+        ensure_installed = {
+            'lua',
+            'markdown',
+            'vim',
+            'vimdoc',
+            'yaml',
+        },
     },
-    ---@param opts lazyvim.TSConfig
     config = function(_, opts)
-        local TS = require('nvim-treesitter')
-
         -- setup treesitter
-        TS.setup(opts)
+        require('nvim-treesitter').setup({
+            install_dir = vim.fn.stdpath('data') .. '/site',
+            match = {
+                enable = true,
+            },
+            swap = {
+                enable = true,
+                swap_next = {
+                    ['<leader>rp'] = '@parameter.inner',
+                },
+                swap_previous = {
+                    ['<leader>rP'] = '@parameter.inner',
+                },
+            },
+            incremental_selection = {
+                enable = true,
+                keymaps = {
+                    init_selection = 'zi',
+                    node_incremental = 'zn',
+                    scope_incremental = 'zo',
+                    node_decremental = 'zd',
+                },
+            },
+        })
+
+        require('nvim-treesitter').install(opts.ensure_installed)
 
         vim.api.nvim_create_autocmd('FileType', {
-            group = vim.api.nvim_create_augroup('treesitter', { clear = true }),
+            pattern = { '<filetype>' },
             callback = function()
-                -- highlighting
-                pcall(vim.treesitter.start)
+                vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+                vim.wo[0][0].foldmethod = 'expr'
+                vim.treesitter.start()
             end,
         })
+
+        -- add toggle keymap for treesitter
+        Snacks.toggle.treesitter():map('<leader>uT')
     end,
 }

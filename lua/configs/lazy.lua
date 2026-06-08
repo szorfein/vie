@@ -1,3 +1,11 @@
+local list_merge = function(...)
+    local lists = {}
+    for _, list in ipairs({ ... }) do
+        vim.list_extend(lists, list)
+    end
+    return lists
+end
+
 -- https://lazy.folke.io/installation
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -15,12 +23,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = '\\'
 
 -- Setup lazy.nvim
 require('lazy').setup({
@@ -44,6 +46,8 @@ require('lazy').setup({
         enabled = false,
     },
 
+    change_detection = { enabled = false },
+
     -- https://github.com/NvChad/starter/blob/main/lua/configs/lazy.lua
     performance = {
         reset_packpath = true,
@@ -51,7 +55,7 @@ require('lazy').setup({
             enabled = true,
         },
         rtp = {
-            disabled_plugins = {
+            disabled_plugins = list_merge({
                 '2html_plugin',
                 'tohtml',
                 'getscript',
@@ -79,7 +83,7 @@ require('lazy').setup({
                 'compiler',
                 'bugreport',
                 'ftplugin',
-            },
+            }),
         },
     },
 })

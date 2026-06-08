@@ -1,9 +1,8 @@
 return {
     'mfussenegger/nvim-lint',
-    event = {
-        'BufReadPre',
-        'BufNewFile',
-    },
+    -- Event to trigger linters
+    --events = { "BufWritePost", "BufReadPost", "InsertLeave" },
+    event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
         -- ansible files are not properly detected without this
         { 'mfussenegger/nvim-ansible' },

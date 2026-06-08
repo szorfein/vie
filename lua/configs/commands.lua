@@ -3,7 +3,7 @@
 local map = vim.keymap.set
 
 -- Reload configuration without restart nvim
-map('n', '<leader>r', ':so %<CR>')
+--map('n', '<leader>r', ':so %<CR>')
 
 -- Close active and all others, à=0, &=1, é=2, "=3 on french keyboard layout
 -- Todo: different files for different layout?
@@ -25,15 +25,15 @@ map('n', '<S-Left>', '<Cmd>vertical resize -2<CR>', { desc = 'Resize split left'
 map('n', '<S-Right>', '<Cmd>vertical resize +2<CR>', { desc = 'Resize split right' })
 
 -- move start, end line
-map({ 'i', 'n' }, '<C-a>', '<Home>', { silent = true, desc = 'move begin line' })
-map({ 'i', 'n' }, '<C-e>', '<End>', { silent = true, desc = 'move end line' })
-map('i', '<C-j>', '<Down>', { desc = 'move down' })
-map({ 'i', 'n' }, '<C-k>', '<Up>', { desc = 'move up' })
+--map({ 'i', 'n' }, '<C-a>', '<Home>', { silent = true, desc = 'move begin line' })
+--map({ 'i', 'n' }, '<C-e>', '<End>', { silent = true, desc = 'move end line' })
+--map('i', '<C-j>', '<Down>', { desc = 'move down' })
+--map({ 'i', 'n' }, '<C-k>', '<Up>', { desc = 'move up' })
 
 -- backward-word
-map({ 'i', 'n' }, '<M-h>', '<C-Left>', { silent = true, desc = 'move backward-word' })
+--map({ 'i', 'n' }, '<M-h>', '<C-Left>', { silent = true, desc = 'move backward-word' })
 -- forward-word
-map({ 'i', 'n' }, '<M-l>', '<C-Right>', { silent = true, desc = 'move forward-word' })
+--map({ 'i', 'n' }, '<M-l>', '<C-Right>', { silent = true, desc = 'move forward-word' })
 
 -- Buffers
 -- docs about vim buffer: https://readmedium.com/neovim-for-beginners-managing-buffers-91367668ce7
