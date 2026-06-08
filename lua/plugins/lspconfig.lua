@@ -7,6 +7,15 @@ return {
         'mason-org/mason-lspconfig.nvim',
     },
     event = { 'BufReadPre', 'BufNewFile' },
+    opts = {
+        servers = {
+            tailwindcss = {
+                flags = {
+                    debounce_text_change = 250,
+                },
+            },
+        },
+    },
     config = function()
         -- 'trace', 'debug', 'info', 'warn', 'error'
         vim.lsp.log.set_level('error')
@@ -88,6 +97,7 @@ return {
         -- simple server with default config
         vim.lsp.enable({
             'lua_ls',
+            'oxlint',
             'rubocop',
             'tailwindcss',
         })
@@ -104,6 +114,7 @@ return {
                     'bashls',
                     'biome',
                     'cssls',
+                    'oxlint',
                     'rubocop',
                     'tailwindcss',
                 },

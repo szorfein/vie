@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.33.0 - Jun. 2026
+
+Perf enhancements
+
+- Improve the loading time (-10ms).
+- Remove the input delay on scrolling (j|k).
+- Colorizer use a fork "wochap/nvim-highlight-colors", this remove freeze when scrolling.
+- Use "prettierd" instead of prettier on Conform
+
+Neovim LSP
+
+- JS: Enable oxlint [oxc](https://oxc.rs/) (used in last vue.js project (npm create vue@latest))
+
 ## 0.29.0, Apr. 2026
 
 - Don't format Ansible code, just enable lsp
@@ -13,7 +26,7 @@
 - Catppuccin.nvim: disable all integrations by default.
 - Add syntax highlight on Yuck.
 - Snack.indent: new color and character.
-- Rename project VIe, pronounce 'Vee', mean Life.
+- Rename project VIe, pronounce 'Vee', mean Life in french.
 - Rename KEYBINDS.md CHEAT-SHEET.md, add a paragraph about basic movements.
 
 ## 0.20.0 - Feb. 2026
