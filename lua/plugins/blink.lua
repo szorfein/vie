@@ -3,7 +3,8 @@ return {
     {
         'saghen/blink.cmp',
         version = '1.*',
-        event = { 'InsertEnter', 'CmdlineEnter' },
+        --event = { 'InsertEnter', 'CmdlineEnter' },
+        event = { 'InsertEnter', 'VeryLazy' },
         dependencies = {
             'L3MON4D3/LuaSnip',
         },
@@ -49,7 +50,7 @@ return {
                 documentation = {
                     auto_show = true,
                     auto_show_delay_ms = 200,
-                    window = { border = 'single' },
+                    window = { border = 'rounded' },
                 },
                 menu = {
                     scrollbar = false,
@@ -60,7 +61,8 @@ return {
                         treesitter = { 'lsp' },
                     },
                 },
-                list = { selection = { preselect = true, auto_insert = true } },
+                -- preselect = false
+                list = { max_items = 100, selection = { preselect = true, auto_insert = true } },
             },
             sources = {
                 default = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
@@ -82,7 +84,10 @@ return {
             },
             signature = {
                 enabled = true,
-                trigger = { show_on_insert = true },
+                trigger = {
+                    -- buggy
+                    show_on_insert = false,
+                },
                 window = {
                     border = 'rounded',
                     direction_priority = { 's', 'n' },

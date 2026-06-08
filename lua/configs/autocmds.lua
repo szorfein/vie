@@ -23,7 +23,7 @@ autocmd('BufWritePre', {
         if file:match('^%w+:[\\/][\\/]') then
             return
         end
-        vim.fn.mkdir(vim.fn.fnamemodify(vim.uv.fs_realpath(file) or file, ':p:h'), 'p')
+	vim.fn.mkdir(vim.fs.abspath(vim.fs.dirname(vim.uv.fs_realpath(file) or file)), "p")
     end,
 })
 

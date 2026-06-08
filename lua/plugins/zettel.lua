@@ -24,8 +24,8 @@ return {
         end,
         -- more shortcuts on note: https://github.com/chipsenkbeil/org-roam.nvim/blob/main/DOCS.org#coming-from-emacs
         keys = {
-            { '<C-c>nn', ':ZettelNew<space>', desc = 'New note' },
-            { '<C-c>nf', ':ZettelOpen<CR>', desc = 'Find notes' },
+            { '<C-c>n', ':ZettelNew<space>', desc = 'New note' },
+            { '<C-c>f', ':ZettelOpen<CR>', desc = 'Find notes' },
         },
     },
 }

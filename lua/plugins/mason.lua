@@ -37,6 +37,7 @@ return {
                 'css-lsp',
                 'eslint_d',
                 'lua-language-server',
+                'oxlint',
                 'prettier',
                 'prettierd',
                 'rufo',
