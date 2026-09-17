@@ -57,7 +57,7 @@ set clipboard=unnamedplus
 set expandtab
 "set tabstop=8
 "set softtabstop=4
-"set shiftwidth=4
+set shiftwidth=4 " used by indent-o-matic or guess-indent plugin
 set smartindent
 "set cindent
 
