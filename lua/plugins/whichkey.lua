@@ -1,18 +1,30 @@
 return {
     'folke/which-key.nvim',
     event = 'VeryLazy',
+    init = function()
+        vim.opt.timeout = true
+    end,
+    opts_extend = { 'spec', 'icons.rules' },
     opts = {
         preset = 'modern',
+        layout = {
+            --spacing = 0,
+        },
+        win = {
+            no_overlap = false,
+            --padding = { 0, 1 },
+            --title = false,
+        },
         --notify = true,
-        -- https://github.com/folke/which-key.nvim/issues/824
-        -- triggers = {
-        --   { "<auto>", mode = "nsot" },
-        -- },
         icons = {
             rules = {
                 { pattern = 'multicursor', icon = ' ', color = 'green' },
             },
         },
+        -- https://github.com/folke/which-key.nvim/issues/824
+        -- triggers = {
+        --   { "<auto>", mode = "nsot" },
+        -- },
     },
     keys = {
         {
