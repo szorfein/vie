@@ -18,7 +18,7 @@ return {
         --notify = true,
         icons = {
             rules = {
-                { pattern = 'multicursor', icon = ' ', color = 'green' },
+                --{ pattern = 'multicursor', icon = ' ', color = 'green' },
             },
         },
         -- https://github.com/folke/which-key.nvim/issues/824
