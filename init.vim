@@ -55,11 +55,11 @@ set clipboard=unnamedplus
 
 " Indentation
 set expandtab
-"set tabstop=8
-"set softtabstop=4
-"set shiftwidth=4
+set tabstop=8
+set softtabstop=4
+set shiftwidth=4
 set smartindent
-"set cindent
+set cindent
 
 " https://geanmar.com/posts/make-nvim-blazingly-fast/#setting-synmaxcol
 "let g:synmaxcol = 500
