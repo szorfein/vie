@@ -1,7 +1,7 @@
 return {
-  "max397574/better-escape.nvim",
-  event = "VeryLazy",
-  opts = {
-	  timeout = 300,
-  }
+    'max397574/better-escape.nvim',
+    event = 'VeryLazy',
+    opts = {
+        timeout = 300,
+    },
 }

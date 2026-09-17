@@ -1,6 +1,6 @@
 <h1 align=center>VIe</h1>
 
-<p align="center"> <i><b>Vi</b></i> * <i><b>E</b>macs</i> <i>("Vie" mean "Life")</i></p>
+<p align="center"> <i><b>Vi</b></i> * <i><b>E</b>macs</i> <i>("Vie" is "Life" in french)</i></p>
 
 ###
 
@@ -32,6 +32,7 @@ Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b
 
 ### Intuitive
 
+- Fast indent with [Indent-O-Matic](https://github.com/Darazaki/indent-o-matic)
 - Auto remove trailing whitespace when save.
 - Format code on save with [Conform](https://github.com/stevearc/conform.nvim).
 - Some Emacs keyboard shortcuts if you come from Emacs.

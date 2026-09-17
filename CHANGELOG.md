@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.34.0 - Sep. 2026
+
+- Add fast indent with "Darazaki/indent-o-matic"
+
 ## 0.33.0 - Jun. 2026
 
 Perf enhancements
