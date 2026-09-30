@@ -22,4 +22,13 @@ return {
             lang_utils.remove_str_from_list(opts.ensure_installed, 'impl')
         end,
     },
+    {
+        'stevearc/conform.nvim',
+        optional = true,
+        opts = {
+            formatters_by_ft = {
+                go = { 'goimports', 'gofumpt' },
+            },
+        },
+    },
 }

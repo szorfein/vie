@@ -6,7 +6,6 @@ return {
         -- if it isn't read by `lazy.nvim` at the start
         opts_extend = { 'ensure_installed' },
     },
-
     {
         'nvim-treesitter/nvim-treesitter',
         optional = true,

@@ -104,7 +104,7 @@ return {
         --standardrb = require('lsp.standardrb')(on_attach),
 
         -- servers with custom config
-        require('lsp.bashls')
+        --require('lsp.bashls')
 
         -- simple server with default config
         vim.lsp.enable({
@@ -160,7 +160,6 @@ return {
         if mason and mason_ok and mason_lspconfig_ok then
             mason_lspconfig.setup({
                 --ensure_installed = {
-                --  'bashls',
                 --  'biome',
                 --  'cssls',
                 --  'oxlint',
