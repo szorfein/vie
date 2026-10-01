@@ -1,4 +1,3 @@
-local prettier = { 'prettier', stop_after_first = true }
 local lazy_utils = require('utils.lazy')
 local format_utils = require('utils.format')
 local lang_utils = require('utils.lang')
@@ -21,11 +20,6 @@ return {
             --javascript = { 'standardjs' },
             ['javascript'] = { 'prettierd' },
             ['json'] = { 'prettierd' },
-            lua = { 'stylua' },
-            ['markdown'] = { 'prettierd' },
-            --ruby = { 'rubocop' },
-            ruby = { 'rufo' },
-            --sh = { 'shfmt' },
             ['typescript'] = { 'prettierd' },
             ['vue'] = { 'prettierd' },
             ['yaml'] = { 'prettierd' },

@@ -17,8 +17,6 @@ return {
     opts = {
         -- NOTE: nvim-treesitter doesn't have the option `ensure_installed`
         ensure_installed = {
-            'lua',
-            'markdown',
             'vim',
             'vimdoc',
             'yaml',

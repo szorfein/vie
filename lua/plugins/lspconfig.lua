@@ -108,9 +108,7 @@ return {
 
         -- simple server with default config
         vim.lsp.enable({
-            'lua_ls',
             'oxlint',
-            'rubocop',
             'tailwindcss',
         })
 
@@ -163,7 +161,6 @@ return {
                 --  'biome',
                 --  'cssls',
                 --  'oxlint',
-                --  'rubocop',
                 --  'tailwindcss',
                 --},
                 --automatic_enable = true,

@@ -13,6 +13,11 @@ return {
             },
         },
     },
+    -- undo none-ls
+    {
+        'nvimtools/none-ls.nvim',
+        enabled = false,
+    },
     {
         'mason-org/mason.nvim',
         --optional = true,

@@ -21,17 +21,12 @@ return {
 
         local ensure_installed = {
             'ansible-lint',
-            'bash-language-server',
             'css-lsp',
             'eslint_d',
-            'lua-language-server',
             'oxlint',
             'prettier',
             'prettierd',
             'rufo',
-            'shellcheck',
-            'shfmt',
-            'stylua',
             'tailwindcss-language-server',
             'typescript-language-server',
             --'standardjs',

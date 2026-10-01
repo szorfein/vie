@@ -97,8 +97,4 @@ return {
         },
         opts_extend = { 'sources.default' },
     },
-    {
-        'folke/lazydev.nvim',
-        ft = 'lua',
-    },
 }
