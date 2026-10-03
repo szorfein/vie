@@ -143,6 +143,13 @@ return {
             end,
             desc = 'Search buffer',
         },
+        { -- super useful, display all the last snack popup
+            '<leader>ee',
+            function()
+                require('snacks').notifier.show_history()
+            end,
+            desc = 'Display last error history',
+        },
     },
     init = function()
         vim.api.nvim_create_autocmd('User', {

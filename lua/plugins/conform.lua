@@ -22,7 +22,6 @@ return {
             ['json'] = { 'prettierd' },
             ['typescript'] = { 'prettierd' },
             ['vue'] = { 'prettierd' },
-            ['yaml'] = { 'prettierd' },
         },
         formatters = {
             prettier = {

@@ -22,14 +22,7 @@ return {
         local ensure_installed = {
             'ansible-lint',
             'css-lsp',
-            'eslint_d',
             'oxlint',
-            'prettier',
-            'prettierd',
-            'rufo',
-            'tailwindcss-language-server',
-            'typescript-language-server',
-            --'standardjs',
         }
 
         local mr = require('mason-registry')

@@ -1,9 +1,3 @@
-require('utils.lazy').on_very_lazy(function()
-    vim.filetype.add({
-        extension = { mdx = 'markdown.mdx' },
-    })
-end)
-
 return {
     {
         'nvim-treesitter/nvim-treesitter',
@@ -18,6 +12,17 @@ return {
     {
         'mason-org/mason.nvim',
         opts = { ensure_installed = { 'prettierd' } },
+    },
+    {
+        'nvim-treesitter/nvim-treesitter',
+        optional = true,
+        opts = function()
+            vim.filetype.add({
+                extension = {
+                    mdx = 'markdown.mdx',
+                },
+            })
+        end,
     },
     {
         'stevearc/conform.nvim',

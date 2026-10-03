@@ -19,7 +19,6 @@ return {
         ensure_installed = {
             'vim',
             'vimdoc',
-            'yaml',
         },
     },
     config = function(_, opts)
