@@ -6,6 +6,7 @@ return {
     end,
     opts_extend = { 'spec', 'icons.rules' },
     opts = {
+        mode = { 'n', 'x' },
         preset = 'modern',
         layout = {
             --spacing = 0,

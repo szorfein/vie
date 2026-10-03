@@ -8,8 +8,8 @@ return {
         'mason-org/mason.nvim',
         'mason-org/mason-lspconfig.nvim',
     },
-    --event = { 'BufReadPre', 'BufNewFile' },
-    event = { 'LazyFile', 'VeryLazy' },
+    event = { 'BufReadPre', 'BufNewFile' },
+    --event = { 'LazyFile', 'VeryLazy' },
     opts = {
         servers = {
             tailwindcss = {

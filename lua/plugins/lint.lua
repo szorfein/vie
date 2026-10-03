@@ -1,11 +1,7 @@
 return {
     'mfussenegger/nvim-lint',
     -- Event to trigger linters
-    event = { 'LazyFile', 'VeryLazy' },
-    dependencies = {
-        -- ansible files are not properly detected without this
-        { 'mfussenegger/nvim-ansible' },
-    },
+    event = 'LazyFile',
     opts = {
         -- Event to trigger linters
         events = { 'BufWritePost', 'BufReadPost', 'InsertLeave' },
@@ -38,7 +34,6 @@ return {
         --  javascriptreact = { 'eslint_d' },
         --  typescriptreact = { 'eslint_d' },
         --  svelte = { 'eslint_d' },
-        --  ['yaml.ansible'] = { 'ansible_lint' },
         --}
 
         vim.api.nvim_create_autocmd(opts.events, {

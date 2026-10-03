@@ -7,12 +7,12 @@ return {
     dependencies = {
         'mason-org/mason-lspconfig.nvim',
     },
-    event = 'VeryLazy',
+    lazy = true,
     cmd = { 'ConformInfo', 'LazyFormat' },
     opts = {
         formatters_by_ft = {
             --astro = { 'biome' },
-            ['astro'] = { 'prettierd' },
+            --['astro'] = { 'prettierd' },
             ['css'] = { 'prettierd' },
             ['scss'] = { 'prettierd' },
             ['graphql'] = { 'prettierd' },
@@ -21,7 +21,7 @@ return {
             ['javascript'] = { 'prettierd' },
             ['json'] = { 'prettierd' },
             ['typescript'] = { 'prettierd' },
-            ['vue'] = { 'prettierd' },
+            --['vue'] = { 'prettierd' },
         },
         formatters = {
             prettier = {
