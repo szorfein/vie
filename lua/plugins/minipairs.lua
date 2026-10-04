@@ -1,6 +1,8 @@
 return {
     'nvim-mini/mini.pairs',
+    version = false, -- main branch
     --event = 'InsertEnter',
+    --event = 'BufReadPost',
     event = 'VeryLazy',
     opts = {
         modes = { insert = true, command = true, terminal = false },
@@ -14,7 +16,7 @@ return {
         -- better deal with markdown code blocks
         markdown = true,
     },
-    config = function()
-        require('mini.pairs').setup()
+    config = function(_, opts)
+        require('mini.pairs').setup(opts)
     end,
 }

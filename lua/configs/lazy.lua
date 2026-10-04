@@ -6,23 +6,14 @@ local list_merge = function(...)
     return lists
 end
 
--- https://lazy.folke.io/installation
-local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-    local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
-    local out = vim.fn.system({ 'git', 'clone', '--filter=blob:none', '--branch=stable', lazyrepo, lazypath })
-    if vim.v.shell_error ~= 0 then
-        vim.api.nvim_echo({
-            { 'Failed to clone lazy.nvim:\n', 'ErrorMsg' },
-            { out, 'WarningMsg' },
-            { '\nPress any key to exit...' },
-        }, true, {})
-        vim.fn.getchar()
-        os.exit(1)
-    end
-end
+-- Load `lazy.nvim`
+require('utils.lazy').install()
 
-vim.opt.rtp:prepend(lazypath)
+-- Load `LazyVim` if possible
+require('utils.lazyvim').install()
+
+-- enable experimental Lua module loader
+vim.loader.enable()
 
 -- Setup lazy.nvim
 require('lazy').setup({
@@ -30,6 +21,9 @@ require('lazy').setup({
         lazy = true,
     },
     spec = {
+        { 'folke/lazy.nvim', version = '*' },
+        require('utils.lazy').find_local_nolazy_spec() or {},
+        { 'LazyVim/LazyVim', priority = 10000, lazy = false, opts = {}, version = '*', config = function() end },
         -- import your plugins
         { import = 'ui' },
         { import = 'plugins' },
@@ -57,16 +51,19 @@ require('lazy').setup({
         rtp = {
             disabled_plugins = list_merge({
                 '2html_plugin',
+                'fzf',
                 'tohtml',
                 'getscript',
                 'getscriptPlugin',
                 'gzip',
                 'logipat',
+                'net',
                 'netrw',
                 'netrwPlugin',
                 'netrwSettings',
                 'netrwFileHandlers',
                 'matchit',
+                'matchparen',
                 'tar',
                 'tarPlugin',
                 'rrhelper',
