@@ -29,15 +29,16 @@ Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b
 - Syntax highlighting with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Git integration with [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 - Statusline, Winbar, and Bufferline, Statuscolumn with [Heirline](https://github.com/rebelot/heirline.nvim)
-- Beautiful Markdown with [render-markdown](MeanderingProgrammer/render-markdown.nvim)
+- Beautiful Markdown with [render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 
 ### Intuitive
 
 - Fast indent with [Indent-O-Matic](https://github.com/Darazaki/indent-o-matic)
 - Auto remove trailing whitespace when save.
 - Format code on save with [Conform](https://github.com/stevearc/conform.nvim).
-- Manage vim buffers like Emacs `<Ctrl-x><b>`, `<Ctrl-x><C-f>`, `<Ctrl-x>k`
+- Manage vim buffers like Emacs `<Ctrl-x><b>`, `<Ctrl-x><Ctrl-f>`, `<Ctrl-x>k`
 - On save, create the missed directories if you forgot to do it yourself `:e h/e/l/l/o/world`.
+- Take simple notes with [vim-zettel](https://github.com/michal-h21/vim-zettel) with `<Ctrl-c>`
 
 ## 🧰 Installation
 
