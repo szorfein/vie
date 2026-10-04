@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.42.0 - Oct.2026
+
+- Rewrite plugins to be more "modular", include LazyVim.nvim
+- More lua/plugins/lang-* (astro, vue, go, ruby, markdown, etc...)
+- More optimization on startup speed
+- Typescript use vtsls (lsp) by default
+- Vue.js use oxl by default with vue_ls (not prettier)
+- Highlighting chezmoi template with alker0/chezmoi.vim
+- Beautiful markdown with MeanderingProgrammer/render-markdown.nvim
+- Add trouble.nvim for diagnostic
+
 ## 0.34.0 - Sep. 2026
 
 - Add fast indent with "Darazaki/indent-o-matic"
