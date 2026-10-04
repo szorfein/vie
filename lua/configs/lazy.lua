@@ -51,7 +51,7 @@ require('lazy').setup({
         rtp = {
             disabled_plugins = list_merge({
                 '2html_plugin',
-                'fzf',
+                --'fzf', used in vim-zettel
                 'tohtml',
                 'getscript',
                 'getscriptPlugin',
