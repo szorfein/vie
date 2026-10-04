@@ -160,8 +160,6 @@ return {
                 --ensure_installed = {
                 --  'biome',
                 --  'cssls',
-                --  'oxlint',
-                --  'tailwindcss',
                 --},
                 --automatic_enable = true,
                 ensure_installed = vim.list_extend(

@@ -45,4 +45,9 @@ return {
             },
         },
     },
+    -- remove mini.icon for now
+    {
+        'nvim-mini/mini.icons',
+        enabled = false,
+    },
 }

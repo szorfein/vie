@@ -1,12 +1,16 @@
 local lang_utils = require('utils.lang')
 
+if vim.fn.executable('go') == 0 then
+    return {}
+end
+
 return {
     {
         import = 'lazyvim.plugins.extras.lang.go',
     },
     {
         'neovim/nvim-lspconfig',
-        --optional = true,
+        optional = true,
         opts = {
             servers = {
                 gopls = {},
@@ -20,7 +24,7 @@ return {
     },
     {
         'mason-org/mason.nvim',
-        --optional = true,
+        optional = true,
         opts = function(_, opts)
             opts.ensure_installed = opts.ensure_installed or {}
             lang_utils.remove_str_from_list(opts.ensure_installed, 'gomodifytags')
