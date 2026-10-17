@@ -45,4 +45,14 @@ return {
             },
         },
     },
+    { -- arrange a bit the default from LazyVim
+        'stevearc/conform.nvim',
+        optional = true,
+        opts = {
+            formatters_by_ft = {
+                vue = { 'oxfmt', 'prettierd' },
+            },
+        },
+    },
+
 }

@@ -5,15 +5,15 @@ set nocompatible
 " Relative line number
 set number relativenumber
 
-"set autoindent " copy indent from the previous line
-"set autoread " reload from disk
-"set backspace=indent,eol,start " modern backspace behavior
+set autoindent " copy indent from the previous line
+set autoread " reload from disk
+set backspace=indent,eol,start " modern backspace behavior
 
 set belloff=all " disable bell
 "set complete-=i " don't scan current on included
 
 " Files for completions
-"set display=lastline,msgsep " display more msg text
+set display=lastline,msgsep " display more msg text
 set encoding=utf-8
 "set fillchars=vert:: " separator character
 
@@ -31,20 +31,27 @@ set noshowcmd
 set noruler
 
 "set listchars=tab:>\ ,trail:-,nbsp:+ " char for :list
-"set nrformats=bin,hex " <c-a> and <c-x> support
+set nrformats=bin,hex " <c-a> and <c-x> support
 "set ruler " display current line # in corner
 "set sessionoptions-=options " do not carry options accross session
 "set shortmess=F " less verbose file info
 "set showcmd " show last command in status line
-"set sidescroll=1
-"set smarttab " tab setting aware <Tab> key
+set sidescroll=1
+set smarttab " tab setting aware <Tab> key
 
 "set tabpagemax=50 " max number of tabs open by -p flag
 "set tags=./tags;,tags " filename to look for tags
-"set ttimeoutlen=50 " ms to wait for next key in sequence
 "set ttyfast
-"set viminfo+=! " save global variables accross session
-"set wildmenu " enhance command line completion
+set viminfo+=! " save global variables accross session
+set wildmenu " enhance command line completion
+
+" delay timeout
+" https://thebetterwebmovement.com/how-to-make-nvim-cursor-quicker-simple-speed-fixes/
+set timeoutlen=300 " ms to wait for next key in sequence
+set ttimeoutlen=50 " ms to wait for next key in terminal key
+set updatetime=250
+set scrolloff=8
+set sidescrolloff=8
 
 " Use system clipboard
 set clipboard=unnamedplus
@@ -64,6 +71,9 @@ set cindent
 
 " https://geanmar.com/posts/make-nvim-blazingly-fast/#setting-synmaxcol
 "let g:synmaxcol = 500
+
+" smaller swapfile
+setlocal noswapfile
 
 " Shell
 "set shell=/bin/zsh
