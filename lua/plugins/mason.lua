@@ -4,6 +4,7 @@ return {
     'mason-org/mason.nvim',
     build = ':MasonUpdate',
     opts_extend = { 'ensure_installed' },
+    cmd = { 'Mason', 'MasonInstall', 'MasonInstallAll', 'MasonUninstall', 'MasonUninstallAll', 'MasonLog' },
     opts = {
         -- NOTE: mason.nvim doesn't have the option `ensure_installed`
         ensure_installed = {},

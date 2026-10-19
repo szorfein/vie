@@ -7,12 +7,12 @@ return {
     opts_extend = { 'spec', 'icons.rules' },
     opts = {
         mode = { 'n', 'x' },
-        preset = 'modern',
+        preset = 'helix', -- or 'modern'
         layout = {
             --spacing = 0,
         },
         win = {
-            no_overlap = false,
+            --no_overlap = false,
             --padding = { 0, 1 },
             --title = false,
         },
@@ -29,7 +29,7 @@ return {
     },
     keys = {
         {
-            '<C-h>b',
+            '<C-h>k', --h(elp) k(ey)
             function()
                 --require('which-key').show({ global = false })
                 require('which-key').show()

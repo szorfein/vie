@@ -37,36 +37,26 @@ set nrformats=bin,hex " <c-a> and <c-x> support
 "set shortmess=F " less verbose file info
 "set showcmd " show last command in status line
 set sidescroll=1
-set smarttab " tab setting aware <Tab> key
 
 "set tabpagemax=50 " max number of tabs open by -p flag
 "set tags=./tags;,tags " filename to look for tags
 "set ttyfast
 set viminfo+=! " save global variables accross session
-set wildmenu " enhance command line completion
 
 " delay timeout
 " https://thebetterwebmovement.com/how-to-make-nvim-cursor-quicker-simple-speed-fixes/
 set timeoutlen=300 " ms to wait for next key in sequence
 set ttimeoutlen=50 " ms to wait for next key in terminal key
-set updatetime=250
 set scrolloff=8
 set sidescrolloff=8
-
-" Use system clipboard
-set clipboard=unnamedplus
 
 " netrw config (:Vexplore)
 "let g:netrw_browse_split = 0
 "let g:netrw_altfile = 1
 
-" Indentation
-set expandtab
-
 ""set tabstop=8
 set softtabstop=4
 set shiftwidth=4 " used by indent-o-matic or guess-indent plugin
-set smartindent
 set cindent
 
 " https://geanmar.com/posts/make-nvim-blazingly-fast/#setting-synmaxcol
@@ -97,10 +87,4 @@ let g:mapleader = ' '
 let g:maplocalleader = '\\'
 
 " Load lazy stuff
-lua require('configs.lazy')
-lua require('configs.autocmds')
-lua require('configs.commands')
-
-" Colours
-"syntax enable
-colorscheme catppuccin
+lua require('vie')
