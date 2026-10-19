@@ -12,9 +12,6 @@ require('utils.lazy').install()
 -- Load `LazyVim` if possible
 require('utils.lazyvim').install()
 
--- enable experimental Lua module loader
-vim.loader.enable()
-
 -- Setup lazy.nvim
 require('lazy').setup({
     defaults = {
@@ -23,16 +20,23 @@ require('lazy').setup({
     spec = {
         { 'folke/lazy.nvim', version = '*' },
         require('utils.lazy').find_local_nolazy_spec() or {},
-        { 'LazyVim/LazyVim', priority = 10000, lazy = false, opts = {}, version = '*', config = function() end },
+        {
+            'LazyVim/LazyVim',
+            priority = 10000,
+            lazy = false,
+            opts = {},
+            version = '*',
+            config = function() end,
+        },
         -- import your plugins
         { import = 'ui' },
         { import = 'plugins' },
     },
     -- Configure any other settings here. See the documentation for more details.
     -- colorscheme that will be used when installing plugins.
-    install = {
-        colorscheme = { 'catppuccin' },
-    },
+    --install = {
+    --    colorscheme = { 'catppuccin' },
+    --},
     -- automatically check for plugin updates, no thanks
     checker = { enabled = false },
 
