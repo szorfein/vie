@@ -34,7 +34,7 @@ return {
         highlight_overrides = {
             all = function(colors)
                 return {
-                    CursorLine = { bg = colors.surface0 }, -- don't work...
+                    CursorLine = { bg = colors.surface0 },
                     StatusLine = { bg = colors.base },
                     StatusLineNC = { bg = colors.base },
                 }

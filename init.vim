@@ -17,7 +17,6 @@ set display=lastline,msgsep " display more msg text
 set encoding=utf-8
 "set fillchars=vert:: " separator character
 
-"set formatoptions=tcqj " autoformatting
 "set fsync " robust file saving
 "set history=10000 " maximum
 "set hlsearch " highlight search results
@@ -43,20 +42,11 @@ set sidescroll=1
 "set ttyfast
 set viminfo+=! " save global variables accross session
 
-" delay timeout
-" https://thebetterwebmovement.com/how-to-make-nvim-cursor-quicker-simple-speed-fixes/
-set timeoutlen=300 " ms to wait for next key in sequence
-set ttimeoutlen=50 " ms to wait for next key in terminal key
-set scrolloff=8
-set sidescrolloff=8
-
 " netrw config (:Vexplore)
 "let g:netrw_browse_split = 0
 "let g:netrw_altfile = 1
 
-""set tabstop=8
 set softtabstop=4
-set shiftwidth=4 " used by indent-o-matic or guess-indent plugin
 set cindent
 
 " https://geanmar.com/posts/make-nvim-blazingly-fast/#setting-synmaxcol
