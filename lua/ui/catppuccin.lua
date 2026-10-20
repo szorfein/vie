@@ -3,8 +3,7 @@ local mycolors = require('colors')
 return {
     'catppuccin/nvim',
     name = 'catppuccin',
-    priority = 1000,
-    lazy = false,
+    event = 'LazyFile',
     opts = {
         color_overrides = {
             all = {
@@ -35,21 +34,30 @@ return {
         highlight_overrides = {
             all = function(colors)
                 return {
-                    CursorLine = { bg = colors.surface0 }, -- don't work...
+                    CursorLine = { bg = colors.surface0 },
                     StatusLine = { bg = colors.base },
                     StatusLineNC = { bg = colors.base },
                 }
             end,
         },
+        lsp_styles = {
+            underlines = {
+                errors = { 'undercurl' },
+                hints = { 'undercurl' },
+                warnings = { 'undercurl' },
+                information = { 'undercurl' },
+            },
+        },
         default_integrations = false,
         --auto_integrations = true,
         integrations = {
             gitsigns = true,
-            treesitter = true,
+            treesitter_context = true,
             snacks = {
                 enabled = true,
                 indent_scope_color = 'lavender', -- catppuccin color (eg. `lavender`) Default: overlay2
             },
+            mason = true,
             lsp_trouble = true,
             vimwiki = true,
             which_key = true,

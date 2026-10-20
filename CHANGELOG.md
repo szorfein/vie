@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.50.0 - Oct. 2026
+
+- Try whichkey with the preset 'helix' instead of the 'modern'
+- Conform format on save.
+- Lazy load keyboard shorcuts and Autocmds, move start on lua/vie/init.lua
+- Lazy load catppuccin
+- Move gitsign shortcuts on "gs"
+- Enable option CursorLine
+
 ## 0.42.0 - Oct.2026
 
 - Rewrite plugins to be more "modular", include LazyVim.nvim

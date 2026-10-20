@@ -24,6 +24,7 @@ autocmd('BufWritePre', {
             return
         end
         vim.fn.mkdir(vim.fs.abspath(vim.fs.dirname(vim.uv.fs_realpath(file) or file)), 'p')
+        require('conform').format({ async = true }) -- not related but it format fine :)
     end,
 })
 
