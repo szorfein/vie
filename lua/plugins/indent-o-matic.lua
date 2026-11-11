@@ -1,7 +1,7 @@
 return {
     'Darazaki/indent-o-matic',
-    --event = 'VeryLazy',
-    lazy = true,
+    event = { 'LazyFile', 'VeryLazy' },
+    --lazy = true,
     enabled = true,
     opts = {
         standard_widths = { 2, 4 },

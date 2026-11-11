@@ -8,8 +8,8 @@ return {
         'mason-org/mason.nvim',
         'mason-org/mason-lspconfig.nvim',
     },
-    event = { 'BufReadPre', 'BufNewFile' },
-    --event = { 'LazyFile', 'VeryLazy' },
+    --event = { 'BufReadPre', 'BufNewFile' },
+    event = { 'LazyFile', 'VeryLazy' },
     opts = {
         servers = {
             tailwindcss = {
@@ -48,13 +48,18 @@ return {
         -- config diagnostic
         -- https://smarttech101.com/nvim-lsp-diagnostics-keybindings-signs-virtual-texts
         vim.diagnostic.config({
+            update_in_insert = false, -- Don't update diagnostics while typing in insert mode
+            underline = true,
             virtual_text = {
                 -- source = "always",  -- Or "if_many"
                 prefix = '●', -- Could be '■', '▎', 'x'
+                spacing = 4,
+                source = 'if_many',
+                delay = 500, -- 500ms delay before showing errors
             },
             severity_sort = true,
             float = {
-                source = 'always', -- Or "if_many"
+                source = 'if_many',
                 border = 'rounded',
                 --border = 'shadow',
                 focused = false,
