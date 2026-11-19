@@ -18,8 +18,10 @@
 Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b> and <b>fast</b>.
 </p>
 
-![Vibe theme with Vie Dasboard](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/Neow.jpg)
-![Vibe theme with Vie](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/full.jpg)
+|                                                                                                      |                                                                                                             |
+| ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| ![Vibe theme with Vie Dasboard](https://github.com/szorfein/unix-portfolio/raw/master/Vibe/Neow.jpg) | ![Familiar theme with Vie](https://github.com/szorfein/unix-portfolio/raw/master/SwayFX/Familiar/clean.jpg) |
+| ![Jinx theme with Vie](https://github.com/szorfein/unix-portfolio/raw/master/SwayFX/Jinx/full.jpg)   | ![Valyria theme with Vie](https://github.com/szorfein/unix-portfolio/raw/master/SwayFX/Valyria/full.jpg)    |
 
 ## ✨ Features
 
