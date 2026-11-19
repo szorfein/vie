@@ -34,7 +34,7 @@ return {
                 local cap = client.server_capabilities
                 buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
-                if cap.definitionProvider then
+                if cap and cap.definitionProvider then
                     vim.keymap.set(
                         'n',
                         '<C-h>dp',
