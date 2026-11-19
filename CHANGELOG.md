@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.51.0 - Nov. 2026
+
+- Update and use `blink.cmp` from the main with the implemention Lua instead of Rust too buggy.
+
 ## 0.50.0 - Oct. 2026
 
 - Try whichkey with the preset 'helix' instead of the 'modern'
