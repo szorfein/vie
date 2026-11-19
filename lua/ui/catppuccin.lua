@@ -51,6 +51,7 @@ return {
         default_integrations = false,
         --auto_integrations = true,
         integrations = {
+            blink = true,
             gitsigns = true,
             treesitter_context = true,
             snacks = {

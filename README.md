@@ -62,6 +62,14 @@ You can customize any of theses files to matches with your need.
 
 lazy.nvim will install all the stuff for Vie, just wait a few seconds.
 
+## Troubleshooting
+
+#### Blink sucks to compile
+
+Because the default timeout use 2 minutes, the blink.cmp has no time to compile, the solution is too compile blink from a terminal:
+
+    nvim --headless "+Lazy! build blink.cmp" +qa
+
 ## 🙌 Contributing
 
 - Report issues on any bugs, suggestions, questions.
