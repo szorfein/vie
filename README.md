@@ -1,6 +1,6 @@
 <h1 align=center>VIe</h1>
 
-<p align="center"> <i><b>Vi</b></i> * <i><b>E</b>macs</i> <i>("Vie" is "Life" in french)</i></p>
+<p align="center"> <i><b>Vi</b></i> * <i><b>E</b>macs</i> <i>("Vie" means "Life" in French)</i></p>
 
 ###
 
@@ -15,7 +15,7 @@
 ###
 
 <p align="center" style="padding: 8px 0 16px 0;">
-Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b> and <b>fast</b>.
+An aesthetic modular <b>Neovim</b> configuration focused on being <b>intuitive</b> and <b>fast</b>.
 </p>
 
 |                                                                                                      |                                                                                                             |
@@ -30,17 +30,17 @@ Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b
 - All colors with [Catppuccin](https://github.com/catppuccin/nvim)
 - Syntax highlighting with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Git integration with [Gitsigns](https://github.com/lewis6991/gitsigns.nvim)
-- Statusline, Winbar, and Bufferline, Statuscolumn with [Heirline](https://github.com/rebelot/heirline.nvim)
+- Statusline, Winbar, Bufferline and Statuscolumn with [Heirline](https://github.com/rebelot/heirline.nvim)
 - Beautiful Markdown with [render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 
 ### Intuitive
 
-- Fast indent with [Indent-O-Matic](https://github.com/Darazaki/indent-o-matic)
-- Auto remove trailing whitespace when save.
+- Fast indentation with [Indent-O-Matic](https://github.com/Darazaki/indent-o-matic)
+- Automatically remove trailing whitespace on save.
 - Format code on save with [Conform](https://github.com/stevearc/conform.nvim).
-- Manage vim buffers like Emacs `<Ctrl-x><b>`, `<Ctrl-x><Ctrl-f>`, `<Ctrl-x>k`
-- On save, create the missed directories if you forgot to do it yourself `:e h/e/l/l/o/world`.
-- Take simple notes with [vim-zettel](https://github.com/michal-h21/vim-zettel) with `<Ctrl-c>`
+- Manage Vim buffers like Emacs `<Ctrl-x><b>`, `<Ctrl-x><Ctrl-f>`, `<Ctrl-x>k`
+- On save, create any missing directories if you forgot to do so yourself `:e h/e/l/l/o/world`.
+- Take simple notes with [vim-zettel](https://github.com/michal-h21/vim-zettel) using `<Ctrl-c>`
 
 ## 🧰 Installation
 
@@ -48,34 +48,34 @@ Aesthetic Modular <b>Neovim</b> configuration that focuses to be <b>intuitive</b
 
 ## 🔧 Configuration
 
-Add a colorscheme (e.g mocha from [catppuccin.nvim](https://github.com/catppuccin/nvim) or create one):
+Add a colorscheme (e.g Mocha from [catppuccin.nvim](https://github.com/catppuccin/nvim) or create you own):
 
     curl -o ~/.config/nvim/lua/colors.lua -sSL https://github.com/catppuccin/nvim/raw/refs/heads/main/lua/catppuccin/palettes/mocha.lua
 
-Add the Heirline configuration for the top bar or a classic bottom:
+Add the Heirline configuration for the top, bottom, the both or no bar:
 
     curl -o ~/.config/nvim/lua/ui/heirline.lua -sSL https://github.com/szorfein/dotfiles/raw/refs/heads/main/swayfx-themes/vibe/.config/nvim/lua/ui/heirline.lua
 
-You can customize any of theses files to matches with your need.
+You can customize any of these files to suit your needs.
 
 ## 🚀 First start
 
     nvim
 
-lazy.nvim will install all the stuff for Vie, just wait a few seconds.
+lazy.nvim will install everything for Vie. Just wait a few seconds.
 
 ## Troubleshooting
 
-#### Blink sucks to compile
+#### Blink takes too long to compile
 
-Because the default timeout use 2 minutes, the blink.cmp has no time to compile, the solution is too compile blink from a terminal:
+Because the default "lazy" timeout is 2 minutes, blink.cmp may not have time to compile. The solution is to compile Blink from a terminal:
 
     nvim --headless "+Lazy! build blink.cmp" +qa
 
 ## 🙌 Contributing
 
-- Report issues on any bugs, suggestions, questions.
-- Pull Request are welcome, enhancing boot time, refactoring, documentations... If not sure about, post an issue first.
+- Report issues, bugs, or suggestions, questions.
+- Pull requests are welcome. Contributions that improve boot time, refactor code, or improve the documentation are appreciated. If you're unsure, post an issue first.
 
 ## ⭐ Inspiration
 
