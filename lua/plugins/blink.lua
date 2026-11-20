@@ -50,6 +50,7 @@ return {
             },
             menu = {
                 draw = {
+                    padding = 2,
                     treesitter = { 'lsp' },
                 },
             },
@@ -79,7 +80,14 @@ return {
         },
 
         -- the rust implementation is super long to compile and very bugged...
-        fuzzy = { implementation = 'lua' },
+        fuzzy = {
+            implementation = 'lua',
+            sorts = {
+                'exact',
+                'score',
+                'sort_text',
+            },
+        },
 
         cmdline = {
             enabled = true,
