@@ -1,3 +1,4 @@
+-- HACK: this file will be loaded first by lazy.nvim
 return {
     {
         'mason-org/mason.nvim',
@@ -10,5 +11,15 @@ return {
         'nvim-treesitter/nvim-treesitter',
         optional = true,
         opts_extend = { 'ensure_installed' },
+    },
+    {
+        'folke/snacks.nvim',
+        optional = true,
+        opts_extend = { 'indent.exclude_filetypes' },
+    },
+    {
+        'MeanderingProgrammer/render-markdown.nvim',
+        optional = true,
+        opts_extend = { 'file_types' },
     },
 }
