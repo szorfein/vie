@@ -5,7 +5,7 @@ end
 return {
     'elkowar/yuck.vim',
     event = { 'BufReadPre', 'BufNewFile' },
-    ft = { 'yuck' },
+    ft = 'yuck',
     dependencies = {
         'gpanders/nvim-parinfer',
     },

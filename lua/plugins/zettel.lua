@@ -1,6 +1,7 @@
 return {
     {
         'vimwiki/vimwiki',
+        event = 'VeryLazy',
         init = function()
             -- for all options > :help vim-zettel
             vim.g.vimwiki_list = { { path = '~/documents/notes/', ext = '.md', syntax = 'markdown' } }
@@ -13,6 +14,7 @@ return {
     },
     {
         'michal-h21/vim-zettel',
+        event = 'VeryLazy',
         dependencies = {
             'junegunn/fzf',
             'junegunn/fzf.vim',

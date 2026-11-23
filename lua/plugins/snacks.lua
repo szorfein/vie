@@ -42,8 +42,7 @@ local banner_priest_4 = [[
 
 return {
     'folke/snacks.nvim',
-    lazy = false,
-    priority = 1000,
+    optional = true,
     opts = {
         -- dashboard
         dashboard = {
@@ -150,13 +149,20 @@ return {
             end,
             desc = 'Display last error history',
         },
+        { -- find files like Emacs
+            '<c-x><c-f>',
+            function()
+                require('snacks').picker.files({
+                    hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat('.git') or {}, 'type') == 'directory',
+                })
+            end,
+            desc = 'Find files',
+        },
     },
     init = function()
         vim.api.nvim_create_autocmd('User', {
             pattern = 'VeryLazy',
             callback = function()
-                local r = require('utils.remaps')
-
                 -- https://github.com/folke/snacks.nvim/blob/main/docs/debug.md
                 _G.dd = function(...)
                     require('snacks').debug.inspect(...)
@@ -169,17 +175,11 @@ return {
                 -- :=Snacks.notifier.notify("hello",4)
                 if vim.fn.has('nvim-0.11') == 1 then
                     vim._print = function(_, ...)
-                        _G.dd(...)
+                        dd(...)
                     end
                 else
-                    vim.print = _G.dd
+                    vim.print = dd
                 end
-
-                r.noremap('n', '<c-x><c-f>', function()
-                    require('snacks').picker.files({
-                        hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat('.git') or {}, 'type') == 'directory',
-                    })
-                end, 'Find files')
             end,
         })
     end,
