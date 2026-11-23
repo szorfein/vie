@@ -1,8 +1,10 @@
 # Changelog
 
-## 0.51.0 - Nov. 2026
+## 0.53.0 - Nov. 2026
 
-- Update and use `blink.cmp` from the main with the implemention Lua instead of Rust too buggy.
+- Load Snacks before plugins
+- Load vim-zettel on the `VeryLazy` event
+- Update `blink.cmp` to the main branch and use the Lua implemention instead of Rust too buggy.
 
 ## 0.50.0 - Oct. 2026
 
